@@ -1,319 +1,158 @@
-# SaaS Revenue Intelligence & Churn Analysis
+# README — Key Findings Section
 
-## Project Overview
-
-This project investigates how customer behaviour, subscription characteristics, engagement, support activity, and acquisition channels are associated with churn and recurring revenue performance in a simulated SaaS environment.
-
-The project combines **MySQL/SQL for data preparation and analysis** with **Power BI for business intelligence and executive reporting**.
-
-> **Important:** The dataset is simulated for educational and portfolio purposes. Findings should therefore be interpreted as analytical relationships within this dataset, not as causal claims about the SaaS industry.
-
----
-
-## Business Problem
-
-SaaS businesses depend heavily on recurring revenue and customer retention. A small increase in churn can materially affect Monthly Recurring Revenue (MRR), customer lifetime value, and growth.
-
-The objective of this project is to answer:
-
-> **Which customer behaviours and subscription characteristics are most strongly associated with SaaS churn, and what can a customer-success team do with those insights?**
-
----
-
-## Research Questions
-
-1. Which customer characteristics are associated with higher churn?
-2. How does product adoption relate to customer retention?
-3. Are subscription plans associated with different retention outcomes?
-4. How do support activity and customer engagement differ between retained and churned customers?
-5. Which acquisition channels are associated with stronger long-term customer retention?
-6. Which customer segments should be prioritised for retention interventions?
-
----
-
-## Analytical Approach
-
-```text
-Raw CSV Data
-     ↓
-Data Quality Checks
-     ↓
-SQL Cleaning & Transformation
-     ↓
-Exploratory Data Analysis
-     ↓
-Customer / Revenue KPI Analysis
-     ↓
-Statistical Relationship Testing
-     ↓
-Churn-Risk Analysis
-     ↓
-Power BI Dashboard
-     ↓
-Business Recommendations
-```
-
-### Analysis stages
-
-**1. Data preparation**
-- Validate customer and subscription records
-- Check missing values and duplicates
-- Standardise categorical fields
-- Validate revenue and churn fields
-- Create analysis-ready tables
-
-**2. Exploratory analysis**
-- MRR and revenue trends
-- Churn rate
-- Retention rate
-- Customer segmentation
-- Product adoption
-- Support activity
-- Acquisition channels
-
-**3. Statistical analysis**
-Where appropriate, statistical tests should be used to determine whether observed differences are statistically meaningful rather than relying only on visual comparisons.
-
-Potential tests include:
-- Chi-square test for categorical variables and churn
-- T-test / ANOVA for differences in continuous measures
-- Correlation analysis for numeric relationships
-
-**4. Churn-risk analysis**
-The project can be extended with an interpretable **logistic regression model** to estimate churn probability and identify the variables most strongly associated with churn.
-
----
-
-## Key SaaS Metrics
-
-### Monthly Recurring Revenue (MRR)
-Recurring subscription revenue generated during a month.
-
-### Churn Rate
-The proportion of customers lost during a defined period.
-
-### Retention Rate
-The proportion of customers retained during a defined period.
-
-### Customer Health Score
-A composite score based on measurable customer behaviour. The score should document:
-- Variables included
-- Weight assigned to each variable
-- Scoring formula
-- Reason for selecting each variable
-- Validation against actual churn outcomes
-
----
-
-## Dashboard
-
-The Power BI dashboard is organised around five business questions:
-
-### 1. Executive Overview
-- MRR
-- Customer count
-- Churn rate
-- Retention rate
-- Revenue trend
-
-### 2. Revenue Intelligence
-- Recurring revenue trends
-- Revenue by subscription plan
-- Revenue by customer segment
-- Acquisition performance
-
-### 3. Customer Segmentation
-- Customer distribution
-- Plan-level behaviour
-- Engagement patterns
-- Product adoption
-
-### 4. Churn Risk
-- Churn by customer characteristics
-- Product adoption vs. churn
-- Support activity vs. churn
-- High-risk customer segments
-
-### 5. Retention & Growth
-- Retention patterns
-- Cohort behaviour
-- Acquisition-channel comparisons
-- Recommended retention priorities
+> **Important:** Replace every `[X]` with the actual result generated from your analysis. Do not use estimated or invented statistics.
 
 ---
 
 ## Key Findings
 
-The current exploratory analysis indicates several areas worth investigating further:
+### 1. Product Adoption & Churn
 
-- Enterprise customers generate a larger share of recurring revenue.
-- Annual subscription customers show stronger retention patterns.
-- Lower product adoption is associated with higher churn in the dataset.
-- Support activity differs between retained and churned customer groups.
-- Acquisition channels show differences in customer retention performance.
+Customers with **low product adoption** recorded a **[X]% churn rate**, compared with **[Y]% among high-adoption customers**.
 
-### Interpreting the findings
+The relationship between product adoption and churn was tested using a **[Chi-square / appropriate test]** and was **[statistically significant / not statistically significant]** (**p = [X]**, effect size = **[X]**).
 
-These observations describe **relationships in the simulated dataset**. They should not be interpreted as proof that one variable causes another.
-
-For example:
-
-> Instead of saying “low product adoption causes churn,” the appropriate interpretation is “low product adoption is associated with higher churn in this dataset.”
-
-Statistical testing and predictive modelling should be used to assess the strength and reliability of these relationships.
+**Business implication:** [Write the retention action supported by the result.]
 
 ---
 
-## Recommended Next Analytical Layer
+### 2. Customer Satisfaction & Churn
 
-To make the project suitable for a stronger graduate-level analytics portfolio, the next stage is:
+Churned customers had an average **NPS of [X]**, compared with **[Y] among retained customers**.
 
-### Churn Prediction
+The difference was **[statistically significant / not statistically significant]** (**p = [X]**, Cohen's d = **[X]**).
 
-Build an interpretable logistic regression model:
-
-**Target variable**
-- Churn: 0 / 1
-
-**Candidate predictors**
-- Tenure
-- Product adoption
-- Subscription plan
-- MRR
-- Support activity
-- Engagement indicators
-- Acquisition channel
-
-### Model evaluation
-
-Report:
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
-- Confusion matrix
-
-The model should be evaluated on held-out data rather than only the training dataset.
+**Business implication:** [Explain what the company should do.]
 
 ---
 
-## Cohort Retention Analysis
+### 3. Support Activity & Churn
 
-A cohort view should track customer retention over time:
+Churned customers averaged **[X] support tickets**, compared with **[Y] among retained customers**.
 
-```text
-Acquisition Month
-       ↓
-Month 0
-       ↓
-Month 1
-       ↓
-Month 2
-       ↓
-Month 3
-       ↓
-...
-```
+The difference was **[statistically significant / not statistically significant]** (**p = [X]**, Cohen's d = **[X]**).
 
-This allows comparison of retention behaviour across different acquisition cohorts instead of relying only on an overall churn rate.
+**Business implication:** [Explain whether support activity should be treated as an early-warning indicator.]
+
+---
+
+### 4. Subscription Plan & Churn
+
+The **[Plan Name]** plan recorded the highest churn rate at **[X]%**, while **[Plan Name]** recorded the lowest at **[Y]%**.
+
+The relationship between subscription plan and churn was **[statistically significant / not statistically significant]** (**χ² = [X]**, **p = [X]**, Cramer's V = **[X]**).
+
+**Business implication:** [Explain what this means for plan strategy or retention.]
+
+---
+
+### 5. Acquisition Channel & Churn
+
+Customers acquired through **[Channel]** recorded a **[X]% churn rate**, while **[Channel]** recorded **[Y]%**.
+
+The relationship between acquisition channel and churn was **[statistically significant / not statistically significant]** (**χ² = [X]**, **p = [X]**, Cramer's V = **[X]**).
+
+**Business implication:** Acquisition channels should be evaluated not only by customer volume but also by **retention and recurring revenue quality**.
+
+---
+
+## Churn Prediction Model
+
+A **Logistic Regression** model was developed to estimate the probability of customer churn using subscription and behavioural characteristics.
+
+### Model Performance
+
+| Metric | Result |
+|---|---:|
+| Accuracy | [X] |
+| Precision | [X] |
+| Recall | [X] |
+| F1 Score | [X] |
+| ROC-AUC | [X] |
+
+### Model Interpretation
+
+The strongest model coefficients were associated with:
+
+1. **[Variable]**
+2. **[Variable]**
+3. **[Variable]**
+4. **[Variable]**
+5. **[Variable]**
+
+The model was used to generate customer-level **predicted churn probabilities** and classify customers into:
+
+- **Low Risk**
+- **Medium Risk**
+- **High Risk**
+
+---
+
+## Cohort Retention
+
+Retention was analysed by **customer signup cohort** and months since signup.
+
+The **[Month/Year] cohort** showed the strongest retention after [X] months at **[X]%**, while the **[Month/Year] cohort** recorded **[Y]%**.
+
+This cohort analysis provides a more detailed view of retention behaviour than relying only on the overall churn rate.
+
+---
+
+## Revenue at Risk
+
+High-risk customers represented **[X]% of the customer base** but accounted for **[Y]% of total MRR**.
+
+The estimated **MRR at risk was [X]** based on [state your calculation method].
+
+This helps prioritise retention efforts toward customers where churn could have the greatest recurring-revenue impact.
 
 ---
 
 ## Business Recommendations
 
-The analysis can support four practical retention priorities:
+Based on the statistical and predictive analysis:
 
-### 1. Identify low-engagement customers early
-Create an early-warning segment based on measurable product-adoption and engagement indicators.
+### 1. Prioritise high-risk, high-value customers
+Use predicted churn probability alongside MRR to identify customers requiring proactive intervention.
 
-### 2. Prioritise high-value customers
-Combine churn risk with MRR/customer value so retention teams focus on customers where intervention has the greatest potential business impact.
+### 2. Improve product adoption
+If the analysis confirms a significant adoption–churn relationship, target low-adoption customers with onboarding and feature-adoption initiatives.
 
-### 3. Improve onboarding and product adoption
-If statistical analysis confirms the relationship between low adoption and churn, onboarding and feature-adoption interventions should be tested.
+### 3. Monitor customer satisfaction
+Use NPS and engagement indicators as potential early-warning signals where the analysis supports the relationship.
 
 ### 4. Evaluate acquisition quality
-Compare retention outcomes across acquisition channels rather than evaluating channels only on initial customer acquisition volume.
+Assess acquisition channels using retention and recurring revenue, rather than acquisition volume alone.
+
+### 5. Use cohort monitoring
+Track retention by signup cohort to identify deterioration or improvement in customer lifecycle performance.
 
 ---
 
-## Dataset
+## Statistical Interpretation Note
 
-The project uses two simulated datasets:
+The analysis identifies **associations and differences within the simulated dataset**. Statistical significance does **not** establish that one variable causes another.
 
-| Dataset | Purpose |
-|---|---|
-| `subscriptions.csv` | Customer subscriptions, plans, churn, acquisition channels, product adoption and support activity |
-| `monthly_revenue.csv` | Monthly recurring revenue, customer growth, churn metrics and SaaS KPIs |
-
-Because the data is simulated, the results are intended for **analytical demonstration and portfolio use**, not external business forecasting.
+The dataset is simulated and therefore the findings should not be interpreted as industry-wide or real-company conclusions.
 
 ---
 
-## Technology Stack
+## How to Replace the Placeholders
 
-| Technology | Purpose |
-|---|---|
-| MySQL | Data storage and querying |
-| SQL | Cleaning, transformation, EDA and KPI analysis |
-| Power BI | Interactive dashboards and business reporting |
-| CSV | Source datasets |
-| GitHub | Version control and project documentation |
+After running:
 
----
-
-## Repository Structure
-
-```text
-SaaS-Revenue-Intelligence-Churn-Analysis/
-│
-├── data/
-├── sql/
-├── dashboard/
-├── images/
-├── insights/
-├── presentation/
-└── README.md
+```bash
+python analysis/statistical_analysis.py
+python analysis/churn_prediction.py
+python analysis/cohort_analysis.py
 ```
 
----
+use the generated files in:
 
-## Limitations
+```text
+analysis/results/
+```
 
-1. The dataset is simulated and may not represent real SaaS customer behaviour.
-2. Observational relationships should not be interpreted as causal relationships.
-3. Results may depend on the variables available in the dataset.
-4. Predictive performance should be validated using a proper train/test methodology.
-5. Findings should be re-evaluated on real customer data before operational use.
+to replace each `[X]`, `[Y]`, and `[Variable]` above.
 
----
-
-## Future Extensions
-
-- Logistic regression churn prediction
-- Customer Lifetime Value (CLV) estimation
-- Cohort retention analysis
-- Survival analysis
-- Predictive customer health scoring
-- Revenue forecasting
-- Automated KPI monitoring
-- Real-time dashboard integration
-
----
-
-## Why This Project Matters
-
-The purpose of this project is not simply to create a dashboard.
-
-It demonstrates a complete analytical workflow:
-
-**Business problem → data preparation → analysis → statistical validation → visualisation → interpretation → business action**
-
-The emphasis is on translating customer and revenue data into decisions that can support **retention, customer success, and sustainable SaaS growth**.
-
----
-
-## License
-
-This project is intended for educational, portfolio, business analytics, and data visualisation purposes.
+**Do not manually estimate the values.**
