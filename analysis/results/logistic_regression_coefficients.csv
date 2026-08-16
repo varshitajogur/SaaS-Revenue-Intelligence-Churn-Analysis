@@ -1,0 +1,39 @@
+feature,coefficient,odds_ratio
+numeric__feature_usage_pct,-1.956143,0.141403
+categorical__upgraded_No,1.537805,4.654364
+categorical__upgraded_Yes,-1.53747,0.214924
+categorical__plan_Enterprise,-1.446337,0.235431
+numeric__nps_score,-1.21981,0.295286
+categorical__plan_Starter,1.110909,3.037117
+categorical__industry_Finance,0.94005,2.56011
+categorical__industry_Education,-0.777442,0.45958
+categorical__industry_Media,-0.564194,0.568818
+categorical__acquisition_channel_Referral,0.555265,1.742402
+categorical__industry_Consulting,-0.444176,0.641352
+categorical__company_size_500+,0.435717,1.546072
+numeric__support_tickets_12mo,0.41664,1.516857
+categorical__industry_Healthcare,0.409267,1.505713
+categorical__industry_Retail,0.406843,1.502069
+categorical__company_size_51-200,-0.387843,0.678519
+categorical__billing_cycle_Monthly,0.372162,1.450867
+categorical__billing_cycle_Annual,-0.371826,0.689474
+categorical__acquisition_channel_Organic Search,-0.286139,0.751158
+categorical__company_size_10-Jan,-0.235608,0.79009
+categorical__acquisition_channel_Paid Ads,-0.187087,0.829372
+categorical__plan_Professional,0.182854,1.200639
+categorical__industry_Technology,0.158702,1.171989
+categorical__plan_Business,0.15291,1.16522
+numeric__monthly_revenue,-0.152801,0.858301
+categorical__acquisition_channel_Direct Sales,-0.141294,0.868234
+categorical__region_Latin America,-0.123357,0.883948
+categorical__region_Asia Pacific,0.112315,1.118865
+categorical__industry_Legal,-0.109272,0.896487
+categorical__acquisition_channel_Partner,0.108496,1.114601
+categorical__company_size_Nov-50,0.101629,1.106973
+categorical__company_size_201-500,0.08644,1.090286
+categorical__industry_Real Estate,-0.051139,0.950147
+categorical__acquisition_channel_Social Media,-0.048906,0.952271
+categorical__industry_Manufacturing,0.031697,1.032204
+categorical__region_Europe,0.022116,1.022362
+numeric__seats,-0.011073,0.988988
+categorical__region_North America,-0.010738,0.98932

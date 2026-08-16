@@ -1,0 +1,5 @@
+,monthly_revenue,monthly_revenue,monthly_revenue,monthly_revenue,seats,seats,seats,seats,support_tickets_12mo,support_tickets_12mo,support_tickets_12mo,support_tickets_12mo,nps_score,nps_score,nps_score,nps_score,feature_usage_pct,feature_usage_pct,feature_usage_pct,feature_usage_pct
+,count,mean,median,std,count,mean,median,std,count,mean,median,std,count,mean,median,std,count,mean,median,std
+churned,,,,,,,,,,,,,,,,,,,,
+No,287,1029.3381,486.84,1598.3072,287,42.878,28.0,50.9451,287,5.5017,5.0,3.7963,287,5.8118,6.0,2.7391,287,55.0174,53.0,23.3356
+Yes,313,623.5545,268.25,1044.8249,313,42.0575,25.0,51.6632,313,7.377,7.0,4.487,313,3.0383,3.0,1.7074,313,27.4537,27.0,11.3966

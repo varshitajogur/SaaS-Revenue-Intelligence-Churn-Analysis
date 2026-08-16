@@ -1,0 +1,8 @@
+variable,chi2,degrees_of_freedom,p_value,cramers_v
+upgraded,50.819813,1,0.0,0.291032
+plan,56.344677,3,0.0,0.306444
+billing_cycle,22.962915,1,2e-06,0.195631
+acquisition_channel,13.831186,5,0.016718,0.151829
+company_size,8.4346,4,0.076895,0.118565
+region,3.896878,3,0.272817,0.08059
+industry,8.977351,9,0.439368,0.12232
